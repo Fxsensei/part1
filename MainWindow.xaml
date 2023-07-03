@@ -1,0 +1,28 @@
+﻿<Window x:Class="RecipeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe App" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Margin="10" FontSize="18" Text="Recipe App" FontWeight="Bold"/>
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <TextBlock Margin="0 0 0 10" FontSize="16" Text="Please choose an option:"/>
+            <Button Click="btnEnterRecipeDetails_Click" Content="Enter recipe details" Margin="0 0 0 5"/>
+            <Button Click="btnDisplayRecipeList_Click" Content="Display recipe list" Margin="0 0 0 5"/>
+            <Button Click="btnDisplayRecipe_Click" Content="Display recipe" Margin="0 0 0 5"/>
+            <Button Click="btnScaleRecipe_Click" Content="Scale recipe" Margin="0 0 0 5"/>
+            <Button Click="btnResetQuantities_Click" Content="Reset quantities" Margin="0 0 0 5"/>
+            <Button Click="btnClearData_Click" Content="Clear all data" Margin="0 0 0 5"/>
+            <Button Click="btnExit_Click" Content="Exit" Margin="0 0 0 5"/>
+
+            <!-- New filter button -->
+            <Button Click="btnFilter_Click" Content="Filter" Margin="0 0 0 5"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
